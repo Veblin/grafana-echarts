@@ -1,12 +1,12 @@
 {
   "type": "panel",
   "name": "Echarts",
-  "id": "bilibala-echarts-panel",
+  "id": "echarts-panel-with-codemirror",
 
   "info": {
     "description": "Echarts panel for grafana",
     "author": {
-      "name": "bilibala"
+      "name": "Veblin"
     },
     "keywords": ["echarts"],
     "logos": {
@@ -14,8 +14,8 @@
       "large": "img/logo.png"
     },
     "links": [
-      {"name": "Website", "url": "https://github.com/Billiballa/grafana-echarts"},
-      {"name": "License", "url": "https://github.com/Billiballa/grafana-echarts/LICENSE"}
+      {"name": "Website", "url": "https://github.com/Veblin/grafana-echarts"},
+      {"name": "License", "url": "https://github.com/Veblin/grafana-echarts/LICENSE"}
     ],
     "screenshots": [],
     "version": "2.0.0",
