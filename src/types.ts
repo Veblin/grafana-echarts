@@ -15,7 +15,7 @@ export function getOption(data: PanelData): echarts.EChartOption {
       lineStyle: {
         width: 1,
       },
-      data: sData.map((d: any, i: number) => [sTime[i], d.toFixed(2)]),
+      data: sData.map((d: any, i: number) => [sTime[i], d ? d.toFixed(2) : 0]),
     };
   });
 
