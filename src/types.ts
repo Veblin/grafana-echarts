@@ -2,7 +2,7 @@ import { PanelData } from '@grafana/ui';
 
 export function getOption(data: PanelData): echarts.EChartOption {
   const series = data.series.map((s: any) => {
-    const sData = s.fields.find((f: any) => f.type === 'number').values.buffer;
+    const sData: [] = s.fields.find((f: any) => f.type === 'number').values.buffer;
     const sTime = s.fields.find((f: any) => f.type === 'time').values.buffer;
 
     return {
@@ -15,7 +15,7 @@ export function getOption(data: PanelData): echarts.EChartOption {
       lineStyle: {
         width: 1,
       },
-      data: sData.map((d: any, i: number) => [sTime[i], d ? d.toFixed(2) : 0]),
+      data: sData.map((d: any, i: number) => [sTime[i], d === null ? 0 : d.toFixed(2)]),
     };
   });
 
